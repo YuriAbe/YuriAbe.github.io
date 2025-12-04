@@ -1,0 +1,270 @@
+/* Estilos gerais */
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1C1C1C 1%, #4168B2 66%, #D4DEFF 100%);
+    color: #fff;
+}
+
+/* Início - Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a {
+    margin: 0 30px;
+}
+
+#home-link {
+    margin: 0 260px 0 20px;
+    font-size: 24px;
+}
+
+nav button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Fim - Navbar */
+
+/* Início - Main */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#home-container,
+#skills-container,
+#projects-container,
+#fun-container {
+    height: 500px;
+}
+
+#home-section h1 {
+    font-size: 310px;
+    margin: 0;
+    padding: 0;
+}
+
+#home-section button {
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+
+#skills-section h1,
+#projects-section h1,
+#fun-section h1 {
+    font-size: 125px;
+    margin: 0;
+    line-height: 1;
+}
+
+#projects-section a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#fun-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#fun-section h1 {
+    margin: 0 0 5% 0;
+}
+
+#fun-container {
+    width: 500px;
+}
+
+.logo {
+    width: 50px;
+    margin: 0 15px 0 0;
+    float: left;
+}
+
+.subtitle {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.subtitle p:not(#home-section .subtitle p) {
+    font-size: 40px;
+}
+
+#linha-horizontal {
+    width: 300px;
+    border: 1px solid #fff;
+    margin: 2% 0 5% 0;
+}
+
+#cards-list {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    border: #fff solid 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.card:hover {
+    background-color: rgba(65, 105, 178, 0.6);
+    scale: 1.02;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4168B2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card:hover a {
+    background-color: #ffffff;
+    color: #2557b3;
+}
+
+/* Fim - Main */
+
+/* Início - Footer */
+footer {
+    height: 30vh;
+    margin: 8% 0 0 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #1C1C1C;
+}
+
+
+footer div {
+    margin: 0 5%;
+}
+
+.card-contact {
+    margin-bottom: 5%;
+}
+
+footer h2,
+footer h3 {
+    font-family: 'Inter';
+}
+
+footer h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5% 0;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 16px;
+    opacity: 50%;
+}
+
+footer img {
+    height: 60px;
+    width: 60px;
+}
+
+#contatos {
+    justify-content: center;
+}
+
+/* Fim - Footer */
+
+#loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+    /* Começa escondido */
+}

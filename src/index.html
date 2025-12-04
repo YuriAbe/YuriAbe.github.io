@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuri Abe - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importando as fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="../assets/imgs/abe-logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="loading-indicator">Carregando...</div>
+
+    <header>
+        <nav>
+            <a id="home-link" href="#">Yuri Abe</a>
+            <ul>
+                <li><a href="#home-section">Início</a></li>
+                <li><a href="#skills-section">Habilidades</a></li>
+                <li><a href="#projects-section">Projetos</a></li>
+                <li><a href="#fun-section">Divirta-se</a></li>
+            </ul>
+            <button id="apertar">Aperte-me</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section">
+            <div class="column">
+                <div class="subtitle">
+                    <img class="logo" src="../assets/imgs/abe-logo.png" alt="logo hideograma abe">
+                    <p>Olá! Gosta de 3D e programação? <br> Veio ao lugar certo.</p>
+                </div>
+
+                <h1>YURI</h1>
+
+                <p>Bem-vindo ao meu portfólio! Meu nome é Yuri, com uma sólida formação técnica e cursando Sistemas para
+                    Internet. Acredito que a tecnologia é uma ferramenta poderosa para a mudança, e meu trabalho é
+                    focado em desenvolver aplicações que não apenas funcionem em, mas que também proporcionem uma ótima
+                    experiência ao usuário. Aqui você encontrará um pouco do meu trabalho, que reflete minha dedicação
+                    em criar experiências digitais acessíveis e impactantes.</p>
+                <button id="inicio-jornada" aria-label="Botão para iniciar a jornada">
+                    Comece sua jornada!
+                </button>
+            </div>
+
+            <div class="column" id="home-container" aria-label="Visualização 3D de uma torre medieval">
+                <!-- O canvas do Three.js será inserido aqui -->
+            </div>
+        </section>
+
+        <section id="skills-section">
+            <div class="column" id="skills-container" aria-label="Visualização 3D de uma torre medieval">
+                <!-- O canvas do Three.js será inserido aqui -->
+            </div>
+
+            <div class="column">
+                <div class="subtitle">
+                    <img class="logo" src="../assets/imgs/abe-logo.png" alt="logo hideograma abe">
+                    <p>Skills</p>
+                </div>
+
+                <h1>Habilidades</h1>
+                <div id="linha-horizontal"></div>
+
+                <p>Para trabalhar com Three.js e desenvolvimento 3D na web, algumas habilidades são importantes:</p>
+                <ul>
+                    <li>Conhecimento em JavaScript e ES6</li>
+                    <li>Familiaridade com conceitos de 3D (câmeras, luzes, materiais)</li>
+                    <li>Experiência com WebGL é um diferencial</li>
+                </ul>
+                <p>
+                    Tenho experiência com bancos de dados como PostgreSQL e MySQL, e sei linguagens como JavaScript e C,
+                    além conhecer um pouco de PHP e Java. No front-end, trabalho com React e Next.js para criar
+                    interfaces dinâmicas, enquanto no back-end, utilizo Node.js ou Spring Boot para construir sistemas
+                    robustos. Além disso, tenho um pé no mundo 3D com Blender e Three.js, e habilidades em design com
+                    Figma e Photoshop, o que me permite ter uma visão completa do processo criativo.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects-section">
+            <div class="column">
+                <div class="subtitle">
+                    <img class="logo" src="../assets/imgs/abe-logo.png" alt="logo hideograma abe">
+                    <p>Projects</p>
+                </div>
+
+                <h1>Projetos</h1>
+                <div id="linha-horizontal"></div>
+
+                <p>Bem-vindo à minha galeria de projetos! Aqui é onde a teoria encontra a prática, veja um pouco do meu
+                    trabalho e das soluções que desenvolvi. Cada projeto representa um desafio superado e uma
+                    oportunidade de aprendizado, demonstrando minha capacidade de aplicar minhas habilidades em soluções
+                    criativas e funcionais. Dê uma olhada nos meus projetos e sinta-se à vontade para entrar em contato
+                    se tiver alguma pergunta ou sugestão.</p>
+                <p>Aqui estão alguns projetos interessantes que utilizam Three.js:</p>
+                <ul>
+                    <li>
+                        <a href="https://threejs.org/examples/#webgl_animation_keyframes">Animação de Personagens</a>
+                    </li>
+                    <li>
+                        <a href="https://threejs.org/examples/#webgl_interactive_cubes">Cubes Interativos</a>
+                    </li>
+                    <li>
+                        <a href="https://threejs.org/examples/#webgl_materials">Materiais Avançados</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column" id="projects-container"
+                aria-label="Visualização 3D de umpergaminho que exibe os projetos">
+                <!-- O canvas do Three.js será inserido aqui -->
+            </div>
+        </section>
+        <section id="cards-projects-section">
+            <div class="column" id="cards-list" aria-label="Lista de projetos com cartões personalizados">
+                <div class="card">
+                    <img src="../assets/imgs/projeto1.png" alt="Projeto 1">
+                    <h2>Projeto - Bestiarius, Crie Seus Inimigos</h2>
+                    <small><strong>Tecnologias</strong> <br> Java, Spring Boot, Spring Security, Flyway, Hibernate, JPA,
+                        DTO, Service, HTML, CSS, JavaScript, Postgresql</small>
+                    <p>Status: Finalizado</p>
+                    <p>Deesenvolvido utilizando Spring Boot, ele serve para você registrar as criaturas e inimigos
+                        poderosos da sua mesa RPG. Você pode ver detalhadamente até o ficha da criatura cadastrada.</p>
+                    <br>
+                    <a href="https://github.com/YuriAbe/Bestiario.git">Ver projeto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/imgs/projeto2.png" alt="Projeto 2">
+                    <h2>Projeto - Funerária Bom Descanso</h2>
+                    <small><strong>Tecnologias</strong> <br> HTML, CSS, JavaScript, React Native, Firebase, Realtime
+                        Database</small>
+                    <p>Status: Em andamento</p>
+                    <p>Um projeto desenvolvido utilizando o framwork React Native e como banco de dados, o Firebase. É
+                        um trabalho em andamento que visa criar uma aplicação móvel para gerenciar contrato de caixões,
+                        lápides e até terrenos do cemitério.
+                    </p>
+                    <br>
+                    <a href="https://github.com/YuriAbe/funeraria-app.git">Ver projeto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/imgs/projeto3.png" alt="Projeto 3">
+                    <h2>Projeto - Lorde dos Dados</h2>
+                    <small><strong>Tecnologias</strong> <br> HTML, CSS, JavaScript, Axios, OBS Studio, Node.js</small>
+                    <p>Status: Finalizado</p>
+                    <p>Um projeto que simula um jogo de RPG de mesa, permitindo que os jogadores rolem dados virtuais e
+                        interajam com o ambiente de jogo ao vivo através do OBS Studio. Além de gerenciarem as fichas e
+                        tokens dos seus Personagens e criaturas do jogo</p>
+                    <br>
+                    <a href="https://github.com/Nakasat/LordeDosDados">Ver projeto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/imgs/projeto4.png" alt="Projeto 4">
+                    <h2>Projeto - Troca de Livros</h2>
+                    <small><strong>Tecnologias</strong> <br> HTML, CSS, JavaScript, React Native, Async Storage</small>
+                    <p>Status: Em andamento</p>
+                    <p>Um projeto que visa facilitar a troca de livros entre usuários e promover a leitura de forma
+                        democrática e acessível.</p>
+                    <br>
+                    <a href="https://github.com/viniciuslks7/Troca-de-Livros.git">Ver projeto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="fun-section">
+            <div class="column">
+
+                <h1>Divirta-se</h1>
+
+                <p>Quando não estou programando, gosto de explorar novos mundos, seja através de jogos ou da modelagem
+                    3D. A tecnologia é minha paixão, e eu adoro descobrir novas formas de usá-la para criar e me
+                    divertir. Seja dando vida a alguma ideia no Blender ou até criando algo em pixelart. Então, como diz
+                    o título desta seção, divirta-se!</p>
+            </div>
+
+            <span>
+                <div class="column" id="fun-container"
+                    aria-label="Visualização 3D de uma construção antiga de tijolos com dados de 20 lados">
+                    <!-- O canvas do Three.js será inserido aqui -->
+                </div>
+            </span>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contatos</h2>
+
+        <section id="contatos">
+            <div class="card-contact">
+                <img src="../assets/imgs/i_email.png" alt="ícone E-mail">
+                <h3>E-mail</h3>
+                <p>yuriabe35@gmail.com</p>
+            </div>
+            <div class="card-contact">
+                <img src="../assets/imgs/i_telefone.png" alt="ícone Telefone">
+                <h3>Telefone</h3>
+                <p>(17) 99722-6349</p>
+            </div>
+            <div class="card-contact">
+                <img src="../assets/imgs/i_linkedin.png" alt="ícone Linkedin">
+                <h3>Linkedin</h3>
+                <p>@YuriRibeiroAbe</p>
+            </div>
+            <div class="card-contact">
+                <img src="../assets/imgs/i_github.png" alt="ícone Github">
+                <h3>Github</h3>
+                <p>@YuriAbe</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Importando o Three.js via CDN (versão r150) -->
+    <!-- A importação via CDN é uma forma simples de incluir a biblioteca sem a necessidade de um processo de build. -->
+    <!-- Usamos um import map para facilitar a referência aos módulos do Three.js no nosso script. -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+        }
+    }
+    </script>
+</body>
+
+<script type="module" src="js/script.js"></script>
+<script type="module" src="js/home.js"></script>
+<script type="module" src="js/skills.js"></script>
+<script type="module" src="js/projects.js"></script>
+<script type="module" src="js/divertase.js"></script>
+
+</html>
