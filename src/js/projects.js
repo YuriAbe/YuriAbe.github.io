@@ -144,6 +144,7 @@ function onWindowResize() {
 
 function animate() {
     requestAnimationFrame(animate);
+    model.rotation.y += 0.01; // Rotate around the Y-axis
     controls.update(); // Apenas se enableDamping ou autoRotate estiverem ativados
     renderer.render(scene, camera);
 }

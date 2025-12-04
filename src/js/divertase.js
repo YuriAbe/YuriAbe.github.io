@@ -34,7 +34,7 @@ function init() {
     // Rotação em Z: 45 graus (PI/4)
     // Rotação em X: 35.264 graus (aproximadamente Math.atan(1 / Math.sqrt(2)))
     camera.rotation.order = 'YXZ'; // Ordem de rotação para evitar gimbal lock
-    camera.rotation.y = Math.PI / 4; 
+    camera.rotation.y = Math.PI / 4;
     camera.rotation.x = Math.atan(1 / Math.sqrt(2));
     camera.rotation.z = 0; // Já está implícito na ordem YXZ, mas explicitado para clareza
 
@@ -131,7 +131,7 @@ function onWindowResize() {
 
     // Atualiza a proporção da câmera ortográfica
     const aspect = newWidth / newHeight;
-    const frustumSize = 10; 
+    const frustumSize = 10;
     camera.left = frustumSize * aspect / -2;
     camera.right = frustumSize * aspect / 2;
     camera.top = frustumSize / 2;
@@ -144,6 +144,7 @@ function onWindowResize() {
 
 function animate() {
     requestAnimationFrame(animate);
+    model.rotation.y += 0.01; // Rotate around the X-axis
     controls.update(); // Apenas se enableDamping ou autoRotate estiverem ativados
     renderer.render(scene, camera);
 }
